@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label> Value of A: </label>
+    <input type="text" id="val1"><br><br>
+
+    <label> Value of B: </label>
+    <input type="text" id="val2">
+
+    <p id="para">Sum is :</p>   
+    <button onclick="sum()" id="btn">Get sum</button>
+
+    <script>
+        function sum(){
+            let x = Number(document.getElementById('val1').value);
+            let y = Number(document.getElementById('val2').value);
+            let result = x + y;
+            document.getElementById('para').innerHTML="Sum is: "+result;
+        }
+    </script>
+</body>
+</html>
